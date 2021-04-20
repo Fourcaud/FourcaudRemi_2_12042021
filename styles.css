@@ -1,11 +1,10 @@
 *{
-	margin: 0px;
+	margin: auto;
 	padding: 5px;
 	font-family: Avenir, sans-serif;
 }
 header{
 	height: 100px;
-
 }
 h1{
 	font-size: 1em;
@@ -14,14 +13,17 @@ h2{
 	font-size: 0.8em;
 	font-weight : normal;
 }
-
-
+a{
+	text-decoration: none;
+}
 .logo{
 	float: left;
 	width: 100px;
 	height: 100px;
 }
+
 /* Menu */
+
 .menu
 {
 	float: right;
@@ -57,85 +59,143 @@ nav a:hover{
 	color: black;
 	border-top: 2px solid blue;
 }
+
+
+
+
+
+
 /*Barre de Recherche icone/champ/bouton*/
-.form-recherche
-{
-	display: flex;
+
+.btn-recherche{
 	height: 30px;
 }
-#icone-form-recherche
+.btn-recherche  button
 {
-	background-color: #F2F2F2;
-	border-top-left-radius: 10px;
-	border-bottom-left-radius: 10px;
-	border: 1px #F2F2F2 solid;
-	border-left: none;
+margin-left: -5px;
+border-bottom-right-radius: 10px;
+border-top-right-radius: 10px;
+border:none;
+background: #0065FC;
+color: #fff;
+height: 30px;
+width: 80px;
 }
-#text-form-recherche
+.btn-recherche  i
 {
-	border-top: 1px #F2F2F2 solid;
-	border-bottom: 1px #F2F2F2 solid;
-	border-left: none;
-	border-right: none;
+	float: left;
+margin-right: -5px;
+border-bottom-left-radius: 10px;
+border-top-left-radius: 10px;
+border:none;
+background: #F2F2F2;
+width: 30px;
+height: 20px;
+text-align: center;
 }
-#button-form-recherche
+.btn-recherche  i::before
 {
-	border-top-right-radius: 10px;
-	border-bottom-right-radius: 10px;
-	border: 1px #F2F2F2 solid;
-	border-left: none;
-	background-color: #0065FC;
-	color: #fff;
+
+width: 30px;
+height: 20px;
+
 }
+.btn-recherche  input
+{
+border-left:none;
+border-right: none;
+border-top: 1px solid #F2F2F2; 
+border-bottom: 1px solid #F2F2F2; 
+background: #fff;
+height: 30px;
+}
+
+.fa-map-marker-alt
+{
+vertical-align: top;
+}
+
 /*Barre de Filtre*/
+
 .box-filtre {
-	display: flex;
-	align-items: center;	
+	display: flex;		
 	flex-direction: row;
+	justify-content: flex-start;
+
 }
 .box-filtre h1{
 	border: none;
 	font-size: 1em;
 }
-.fa-circle
+
+
+.box-1
 {
-	color: #F2F2F2;
-	margin-right: -100px ;
+	width: auto;
+	text-align: center;
+
 }
-.fas 
+.box-1 i
 {
-	padding: 0;
-	color: blue;
+
+float: left;
+margin-right: -10px;
+border-radius: 50px;
+border:none;
+background: #DEEBFF;
+height: 20px;
+position: relative;
 }
-.box-economique, .box-familial , .box-romantique , .box-animaux-autorises
+.box-1 button
 {
-	display: flex;
-	align-items: flex-start;
+padding: 0 10px 0 20px;
+margin-left: -5px;
+border-bottom-right-radius: 40px;
+border-top-right-radius: 40px;
+border:2px solid #F2F2F2;
+border-left: none;
+background: #fff;
+height: 30px;
+
 }
-#button-economique,#button-familial,#button-romantique,#button-animaux-autorises
+.box-1:hover{
+-webkit-transform: scale(1.3);
+transform: scale(1.3);
+}
+
+.box-1 .fas
 {
-	border: 2px #F2F2F2 solid;
-	border-radius: 50px ;
-	background-color: #fff;
-	padding: 10px;
+	color: #0065FC;
 }
-.icone-info{
-	float: left;
-	width: 10px;
-	height: 10px;
-	padding-top: 1px;
+
+
+
+.fa-info-circle
+{
+	color: #0065FC;
 }
+
+
+
+
+
+
 
 /*Box Articles de la page*/
 .section1
 {
 	display: flex;
+
+	
+}
+section{
 	margin-bottom: 20px;
 }
 
 article, aside
 {
 	text-align: justify;
+	margin: auto;
 }
 article
 {
@@ -149,11 +209,20 @@ aside
 	padding: 10px;
 
 }
-.onglet-hebergement ,.onglet-populaires
+.onglet-hebergement 
 {
 	background-color:#F2F2F2;
 	border-radius: 10px;
 	padding: 20px;
+	height: 500px;
+}
+.onglet-populaires
+{
+	background-color:#F2F2F2;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 20px;
+	height: 500px;
 }
 .box-hebergement
 {
@@ -209,6 +278,7 @@ aside
 
 
 }
+
 .fa-star
 {
 	color: grey;
@@ -218,11 +288,16 @@ aside
 	color: blue;
 }
 
+.fa-chart-line
+{
+	float: right;
+}
+
 /*Activité à marseille*/
 .activite
 {
 
-	display: flex;
+display: flex;
 flex-direction: row;
 justify-content: space-around;
 }
@@ -239,35 +314,22 @@ flex: 1;
 {
 display: flex;
 flex-direction: row;
-
-
-
-
 }
 .sous-box-activite-2
 {
 display: flex;
 flex-direction: column;
-
-justify-content: space-between;
-
-
 }
 .img-l
 {
 /*
 box-shadow: 1px 1px 12px #555;*/
-
 max-width: 300px;
 margin: 0;
 padding: 0;
 }
 .text-img-l
 {
-
-
-
-
 }
 .img-m 
 {
@@ -288,8 +350,6 @@ padding: -10px;
 	border-top-left-radius: 30px;
 	border-top-right-radius: 30px;
 box-shadow: 1px 1px 12px #555
-
-
 
 }
 .img-m img
