@@ -1,0 +1,342 @@
+*{
+	margin: 0px;
+	padding: 5px;
+	font-family: Avenir, sans-serif;
+}
+header{
+	height: 100px;
+
+}
+h1{
+	font-size: 1em;
+}
+h2{
+	font-size: 0.8em;
+	font-weight : normal;
+}
+
+
+.logo{
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+/* Menu */
+.menu
+{
+	float: right;
+}
+nav{
+	
+	width: 100%;
+	margin: 0px auto 40px auto;
+	background-color: white;
+	position: sticky;
+	top: 0px;
+}
+nav li{
+	list-style-type: none;
+	float: left;
+	margin: 10px 10px 10px 10px ;
+	text-align: center;
+}
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after{
+	content: "";
+	display: table;
+	clear: both;
+}
+nav a{
+	display: block; /*Toute la surface sera cliquable*/
+	text-decoration: none;
+	color: blue;
+	border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+	padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+nav a:hover{
+	color: black;
+	border-top: 2px solid blue;
+}
+/*Barre de Recherche icone/champ/bouton*/
+.form-recherche
+{
+	display: flex;
+	height: 30px;
+}
+#icone-form-recherche
+{
+	background-color: #F2F2F2;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border: 1px #F2F2F2 solid;
+	border-left: none;
+}
+#text-form-recherche
+{
+	border-top: 1px #F2F2F2 solid;
+	border-bottom: 1px #F2F2F2 solid;
+	border-left: none;
+	border-right: none;
+}
+#button-form-recherche
+{
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	border: 1px #F2F2F2 solid;
+	border-left: none;
+	background-color: #0065FC;
+	color: #fff;
+}
+/*Barre de Filtre*/
+.box-filtre {
+	display: flex;
+	align-items: center;	
+	flex-direction: row;
+}
+.box-filtre h1{
+	border: none;
+	font-size: 1em;
+}
+.fa-circle
+{
+	color: #F2F2F2;
+	margin-right: -100px ;
+}
+.fas 
+{
+	padding: 0;
+	color: blue;
+}
+.box-economique, .box-familial , .box-romantique , .box-animaux-autorises
+{
+	display: flex;
+	align-items: flex-start;
+}
+#button-economique,#button-familial,#button-romantique,#button-animaux-autorises
+{
+	border: 2px #F2F2F2 solid;
+	border-radius: 50px ;
+	background-color: #fff;
+	padding: 10px;
+}
+.icone-info{
+	float: left;
+	width: 10px;
+	height: 10px;
+	padding-top: 1px;
+}
+
+/*Box Articles de la page*/
+.section1
+{
+	display: flex;
+	margin-bottom: 20px;
+}
+
+article, aside
+{
+	text-align: justify;
+}
+article
+{
+	margin-right: 20px;
+	flex: 3;
+}
+aside
+{
+	flex: 1.2;
+	position: relative;
+	padding: 10px;
+
+}
+.onglet-hebergement ,.onglet-populaires
+{
+	background-color:#F2F2F2;
+	border-radius: 10px;
+	padding: 20px;
+}
+.box-hebergement
+{
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	background-color:#F2F2F2;
+	flex-direction: row;
+
+}
+.box-hebergement img
+{
+	width:200px;
+	height: 120px;
+	border-radius: 10px;
+	padding: 0;
+}
+.box
+{
+	background-color: #fff;
+	margin: 10px;
+	border-radius: 10px;
+	flex-direction: column;
+	margin: auto;
+}
+.box-populaires
+{
+
+	display: flex;
+	justify-content:space-around;	
+	flex-direction: column;
+
+
+}
+.box-populaires img
+{
+	width:100px;
+	height: 100px;
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	padding: 0;
+	
+}
+
+.box-2
+{
+	background-color: #fff;
+
+  display: flex;
+  flex-flow: row;
+	margin: 10px;
+	border-radius: 10px;
+
+
+}
+.fa-star
+{
+	color: grey;
+}
+.fa-star.blue
+{
+	color: blue;
+}
+
+/*Activité à marseille*/
+.activite
+{
+
+	display: flex;
+flex-direction: row;
+justify-content: space-around;
+}
+.box-activite
+{
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+flex: 1;
+
+}
+.sous-box-activite-1
+{
+display: flex;
+flex-direction: row;
+
+
+
+
+}
+.sous-box-activite-2
+{
+display: flex;
+flex-direction: column;
+
+justify-content: space-between;
+
+
+}
+.img-l
+{
+/*
+box-shadow: 1px 1px 12px #555;*/
+
+max-width: 300px;
+margin: 0;
+padding: 0;
+}
+.text-img-l
+{
+
+
+
+
+}
+.img-m 
+{
+border-radius: 10px;
+box-shadow: 0px 0px 12px #555;
+
+}
+.img-s 
+{
+border-radius: 10px;
+box-shadow: 1px 1px 12px #555;
+padding: -10px;
+}
+.img-l img
+{
+	width:300px;
+	height: 300px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+box-shadow: 1px 1px 12px #555
+
+
+
+}
+.img-m img
+{
+	width:300px;
+	height: 150px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+
+}
+.img-s img
+{
+	width:300px;
+	height: 80px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+
+ 
+}
+
+/* Footer*/
+
+footer
+{
+	display: flex;    
+	padding-top: 25px;
+	background-color:#F2F2F2;
+}
+footer p, footer ul
+{
+	font-size: 0.8em;
+}
+footer h1
+{
+	font-size: 1.1em;
+}
+#a-propos
+{
+	width: 28%;
+}
+#nos-hebergements
+{
+	width: 35%;
+}
+#assistance
+{
+	width: 31%;
+}
+
