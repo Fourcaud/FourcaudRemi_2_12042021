@@ -1,5 +1,11 @@
 *{
-	font-family: Avenir, sans-serif;
+	font-family: Raleway, sans-serif;
+}
+
+@font-face
+{
+	font-family: 'Raleway';
+	src:url(Raleway-VariableFont_wght.ttf);
 }
 
 html,body
