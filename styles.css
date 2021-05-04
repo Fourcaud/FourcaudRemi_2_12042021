@@ -778,9 +778,10 @@ footer {
 }
 h4 {
     font-weight: bold;
-    padding-left: 0px;
+    padding-left: 20px;
+    padding-top: 10px;
     margin: 0px;
-    font-size: 2em;
+    font-size: 1em;
 }
 footer p, footer ul {
     font-size: 1.6em;
